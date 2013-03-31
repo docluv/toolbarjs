@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Deep Tissue Unit Tests</title>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="qunit.js" type="text/javascript"></script>
+        <script src="beautify-html.js" type="text/javascript"></script>
+        <script src="sinon.js" type="text/javascript"></script>
+        <script src="Util.Tests.js" type="text/javascript"></script>
+        
+        <link rel="stylesheet" href="qunit.css" type="text/css" media="screen" />
+
+        <style>
+
+            menu {
+                width: 450px;
+                height: 50px;
+                background-color: #0094ff;
+            }
+
+            nav {
+                
+                display: inline-block;
+            }
+
+            nav a {
+                height: 50px;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 24pt;
+            }
+            
+            #testtarget
+            {
+                height: 100px;
+                width: 100px;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+
+        <h1 id="qunit-header">QUnit tests</h1>
+        <h2 id="qunit-banner">
+        </h2>
+        <div id="qunit-testrunner-toolbar">
+        </div>
+        <h2 id="qunit-userAgent">
+        </h2>
+        <ol id="qunit-tests">
+        </ol>
+        <div id="qunit-fixture">
+            <div id="container">
+                <section class="operation-body"></section>
+            </div>
+        </div>
+
+        <footer class="toolbar">
+            <nav class="toolbar-top-menu">
+                <div class="toolbar-item">
+                    <div class="toolbar-item-icon sports-icon"></div>
+                    <figcaption>Sports</figcaption>
+                </div>
+                <div class="toolbar-item">
+                    <div class="toolbar-item-icon comedy-icon"></div>
+                    <figcaption>Comedy</figcaption>
+                </div>                
+                <div class="toolbar-item">
+                    <div class="toolbar-item-icon documentary-icon"></div>
+                    <figcaption>Docus</figcaption>
+                </div>                
+                <div class="toolbar-item">
+                    <div class="toolbar-item-icon tragedy-icon"></div>
+                    <figcaption>Tragedy</figcaption>
+                </div>
+                <div class="expand-toolbar">...</div>
+            </nav>
+            <nav class="toolbar-sub-menu">
+                <ul class="toolbar-sub-menu-nav-list">
+                    <li class="toolbar-sub-menu-nav-item">Sub Item 1</li>
+                    <li class="toolbar-sub-menu-nav-item">Sub Item 2</li>
+                    <li class="toolbar-sub-menu-nav-item">Sub Item 3</li>
+                    <li class="toolbar-sub-menu-nav-item">Sub Item 4</li>
+                    <li class="toolbar-sub-menu-nav-item">Sub Item 5</li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="../debug/helper.js"></script>
+        <script src="../debug/helper.etxtensions.js"></script>
+        <script src="../debug/toolbar.js" type="text/javascript"></script>
+        <script src="toolbar.tests.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document)
+                    .ready(function(){
+                            $('#qunit-tests').addClass('hidepass');
+                    })
+                    .delegate("#qunit-testrunner-toolbar", "DOMNodeInserted", function(e){
+                            $("#qunit-filter-pass").attr("checked", true)   
+                    })
+                    .delegate("#qunit-filter-pass", "click", function(e){
+                            e.stopPropagation();
+                            var newValue = $(this).is(":checked");
+                            $('#qunit-tests').toggleClass('hidepass', newValue);
+                    });
+        </script>
+
+    </body>
+</html>

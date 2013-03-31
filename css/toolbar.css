@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+.toolbar {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: #C12828;
+    color: #fff;
+    height: 35px;
+    overflow: hidden;
+}
+
+.toolbar-top-menu {
+    width: 100%;
+    float: left;
+}
+
+.toolbar-item {
+    display: inline-block;
+    width: 36px;
+    height: 42px;
+    margin: 5px 3% 0px 3%;
+}
+
+
+.toolbar-item-icon {
+    display: block;
+    width: 30px;
+    height: 26px;
+    margin: 0 auto;
+    background-image: url("../icons.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.toolbar-item-landscape {
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.expand-toolbar {
+    display: inline-block;
+    width: 36px;
+    height: 42px;
+    margin: 5px 5% 0px 5%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 24px;
+    float: right;
+}
+
+.toolbar-item > figcaption {
+    text-align: center;
+    font-size: 9px;
+    color: #fff;
+    font-weight: bold;
+    margin: 2px auto;
+    display: block;
+    line-height: 14px;
+    width: 36px;
+}
+
+.toolbar-sub-menu {
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.toolbar-sub-menu-nav-list {
+    padding-left: 6px;
+}
+
+.toolbar-sub-menu-nav-item {
+    right: 0px;
+    left: 0px;
+    overflow: hidden;
+    margin-bottom: 3px;
+    padding-left: 6px;
+    height: 36px;
+    color: #fff;
+    font-size: 21px;
+    line-height: 36px;
+}
+
+
+/* These are for demo purposes, get your own icons :)*/
+
+.tragedy-icon {
+    background-position: -84px 0;
+}
+
+.documentary-icon {
+    background-position: -55px 0;
+}
+
+.comedy-icon {
+    background-position: -26px 0;
+}
+
+.sports-icon {
+    background-position: 2px 0;
+}
+
+
+@media all and (orientation:landscape) {
+
+    .toolbar {
+        top: 0;
+        width: 42px;
+        left: auto;
+        height: 100%;
+    }
+
+    .toolbar-top-menu {
+        height: 100%;
+        width: 42px;
+    }
+
+    .toolbar-item {
+        margin: 20% 3px;
+    }
+
+    /*.toolbar-item-icon {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }*/
+
+    .toolbar-sub-menu {
+        float: none;
+    }
+
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>toolbar.js - A JavaScript Toolbar Library</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <meta content="A JavaScript Library to replicate the Windows Phone appbar functionality in HTML5 web applications" name="description">
+        <meta content="Chris Love" name="author">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link href="favicon.ico" rel="shortcut icon">
+        <link href="img/h/apple-touch-icon.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+        <link href="img/m/apple-touch-icon.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+        <link href="img/l/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+        <link href="img/l/apple-touch-icon.png" rel="shortcut icon">
+
+        <meta name="application-name" content="toolbar.js" />
+        <meta name="msapplication-TileColor" content="#C12828" />
+        <meta name="msapplication-TileImage" content="msTouchIcon.png" />
+
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+        <meta name="google-site-verification" content="XXX" />
+
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        <link href="img/l/splash.png" rel="apple-touch-startup-image">
+        <meta content="on" http-equiv="cleartype">
+
+        <link href="css/site.css?v=1" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <a href="/" title="toolbar.js a toolbar Library" class="no-decor">
+                <img src="img\m\apple-touch-icon.png" alt="toolbar.js" class="site-logo" /><h1>toolbar.js</h1></a>
+            <h2>A JavaScript Library to mimic the Windows Phone appBar functionality in HTML5 Web Applications</h2>
+            <nav class="site-menu">
+                <a href="fulltoolbar.html">Full Toolbar</a>
+                <a href="nosubmenu.html">No Sub Menu</a>
+                <a href="noitems.html">No Menu Items</a>
+            </nav>
+        </header>
+        <section class="main-content">
+            <article>
+                <section class="content">
+                    <p>toolbar.js is a helper library to make it easy for developers to add a toolbar navigation experience to the mobile HTML5 web applications. It is based on the Windows Phone appBar.</p>
+                    <p><a href="https://github.com/docluv/toolbarjs" class="clone">Clone the Source Code On GitHub</a></p>
+                    <p><a href="github-windows://openRepo/https://github.com/docluv/toolbarjs" class="button minibutton " icon_class="mini-icon-windows"><span class="mini-icon mini-icon-windows"></span>Clone in Windows</a></p>
+                    <p>The library was written with no 3rd party library, like jQuery, dependencies. The library does work just fine with jQuery. In fact I will have an additional jQuery file that provides extension methods structured consistently with the way jQuery abstracts standard browser events. </p>
+
+                    <p>In the initial release support for a top level menu and a sub menu are supported. It uses background images, set in a CSS class, for the top menu icons. If sub menu items are included the menu can be expanded by pressing the elipses (...) located on the right-hand side of the toolbar.</p>
+                    <h3>Some things to note:</h3>
+
+                    <p>I have expreienced issues with the default Android browser. I am working on those and hope to have some modifications in place soon. The toolbar currently supports only navigation items. It does not have the capacity at this time to include input controls or custom markup. This is on the todo list.</p>
+
+                    <h3>Documentation</h3>
+
+                    <p>You can always reference the test pages. I have also included a basic set of documentation that will hopefully help you as well. Open the readme.md file included in the source.</p>
+
+
+                    <h3>Conclusion</h3>
+
+                    <p>Please feel free to use this library. I am integrating it to my web sites and will list the as they come online, so I am dogfooding this library. I consider it early Alpha if you will because I really want to do more testing. If you have any comments or questions drop me a line, Twitter is probably the best way, <a href="http://twitter.com/chrislove">@ChrisLove</a>. My blog is <a href="http://Professionalaspnet.com">ProfessionalAspNet.com</a>. I am new to this GitHub thing so I may or may not know proper GitHub etiquette, so please forgive my missteps there.</p>
+
+                </section>
+                <footer>
+                    <nav class="site-menu">
+                        <a href="fulltoolbar.html">Full Toolbar</a>
+                        <a href="nosubmenu.html">No Sub Menu</a>
+                        <a href="noitems.html">No Menu Items</a>
+                    </nav>
+                </footer>
+            </article>
+        </section>
+        <div class="ribbon">
+            <a href="https://github.com/docluv/toolbarjs" rel="me" title="Fork Me On GitHub">Fork me on GitHub</a>
+        </div>
+
+        <script type="text/javascript">
+            
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-83556-6']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script>
+    </body>
+</html>

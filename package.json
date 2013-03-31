@@ -1,0 +1,20 @@
+{
+    "name": "toolbarjs",
+    "description": "JavaScript test spies, stubs and mocks.",
+    "version": "0.0.1",
+    "homepage": "http://github.com/docluv/toolbarjs/",
+    "author": "Chris Love",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/docluv/toolbarjs.git"
+    },
+    "bugs": {
+        "mail": "clove@extremewebworks.com",
+        "url": "http://github.com/docluv/toolbarjs/issues"
+    },
+    "licenses": [
+        { "type": "BSD",
+          "url": "http://github.com/docluv/toolbarjs/blob/master/LICENSE"
+        }
+    ]
+}
