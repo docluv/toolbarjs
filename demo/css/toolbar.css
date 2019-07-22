@@ -38,10 +38,6 @@ body {
 }
 
 .toolbar-item-landscape {
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
@@ -55,10 +51,9 @@ body {
     font-weight: bold;
     font-size: 2em;
     line-height: 24px;
-    float: right;
 }
 
-.toolbar-item > figcaption {
+.toolbar-item>figcaption {
     text-align: center;
     font-size: 9px;
     color: #fff;
@@ -129,16 +124,8 @@ body {
         margin: 20% 3px;
     }
 
-    /*.toolbar-item-icon {
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }*/
-
     .toolbar-sub-menu {
         float: none;
     }
-
 
 }

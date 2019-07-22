@@ -3,6 +3,11 @@
     "description": "JavaScript test spies, stubs and mocks.",
     "version": "0.0.1",
     "homepage": "http://github.com/docluv/toolbarjs/",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "http-server demo/ -p 9999 -c -i"
+    },
+
     "author": "Chris Love",
     "repository": {
         "type": "git",
@@ -12,9 +17,8 @@
         "mail": "clove@extremewebworks.com",
         "url": "http://github.com/docluv/toolbarjs/issues"
     },
-    "licenses": [
-        { "type": "BSD",
-          "url": "http://github.com/docluv/toolbarjs/blob/master/LICENSE"
-        }
-    ]
+    "licenses": [ {
+        "type": "BSD",
+        "url": "http://github.com/docluv/toolbarjs/blob/master/LICENSE"
+    } ]
 }

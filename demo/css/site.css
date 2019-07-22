@@ -1,16 +1,15 @@
-html, body {
+html,
+body {
     cursor: default;
     height: 100%;
     -ms-scroll-translation: vertical-to-horizontal;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
     user-select: none;
     -ms-touch-action: none;
 }
 
 html {
-    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
 }
 
 body {
@@ -25,8 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-a
-{
+a {
     color: #fff;
 }
 
@@ -35,7 +33,7 @@ nav.site-menu {
     margin: 20px auto;
 }
 
-nav.site-menu > a {
+nav.site-menu>a {
     margin: 5px 15px 20px 15px;
     padding: 5px 10px;
     text-decoration: none;
@@ -54,12 +52,8 @@ nav.site-menu > a {
     right: -3em;
     top: 2.5em;
     /* 45 deg cw rotation */
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     /* shadow */
-    -moz-box-shadow: 0 0 1em #888;
-    -webkit-box-shadow: 0 0 1em #888;
     box-shadow: 0 0 1em #888;
 }
 
@@ -113,7 +107,6 @@ p {
     font-family: Calibri Verdana;
 }
 
-h2
-{
+h2 {
     float: left;
 }

@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>toolbar.js - A JavaScript Toolbar Library</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
 
         <meta content="A JavaScript Library to replicate the Windows Phone appbar functionality in HTML5 web applications" name="description">
         <meta content="Chris Love" name="author">
@@ -36,7 +36,7 @@
 
     </head>
     <body>
-                <header>
+        <header>
             <a href="/" title="toolbar.js a toolbar Library" class="no-decor">
                 <img src="img\m\apple-touch-icon.png" alt="toolbar.js" class="site-logo" /><h1>toolbar.js</h1></a>
             <h2>A JavaScript Library to mimic the Windows Phone appBar functionality in HTML5 Web Applications</h2>
@@ -55,22 +55,17 @@
             </nav>
         </footer>
 
+        <script src="\js\debug\helper.js"></script>
+        <script src="\js\debug\helper.etxtensions.js"></script>
+        <script src="\js\debug\toolbar.js"></script>
+        <script src="\js\nosubmenu.js"></script>
+
         <div class="ribbon">
             <a href="https://github.com/docluv/toolbarjs" rel="me" title="Fork Me On GitHub">Fork me on GitHub</a>
         </div>
 
-        <script src="\js\debug\helper.js"></script>
-        <script src="\js\debug\helper.etxtensions.js"></script>
-        <script src="\js\debug\toolbar.js"></script>
-
-        <script>
-
-            var tb = toolbar(document.querySelector(".toolbar"));
-            
-        </script>
-
-
         <script type="text/javascript">
+
             
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-83556-6']);
@@ -83,7 +78,6 @@
             })();
             
         </script>
-
 
     </body>
 </html>
